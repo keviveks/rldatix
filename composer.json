@@ -1,0 +1,34 @@
+{
+    "name": "keviveks/rldatix",
+    "description": "RLDatix code test project",
+    "type": "project",
+    "require": {
+        "symfony/console": "^5.1",
+        "vlucas/phpdotenv": "^4.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "keviveks",
+            "email": "keviveks@gmail.com"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "src/command/FetchWeatherCommand.php",
+            "src/command/ShowWeatherCommand.php",
+            "src/command/FindPalindromCommand.php",
+            "src/command/ReverseWordCommand.php",
+            "src/service/PalindromService.php",
+            "src/service/ReverseService.php",
+            "src/service/WeatherService.php",
+            "src/model/WeatherModel.php",
+            "lib/Logger.php",
+            "lib/Database.php",
+            "lib/Remote.php"
+        ]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.1"
+    }
+}
